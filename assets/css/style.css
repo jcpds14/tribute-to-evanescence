@@ -1,0 +1,158 @@
+body{
+    font-family: 'Philosopher';
+    margin:0;
+    padding: 0;
+    background: #000000;
+    color: white ;
+}
+a {
+    text-decoration: none;
+    color: #979797;
+    font-family:Arial, Helvetica, sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+    font-size:17px;
+    transition: 1s;
+}
+#banner{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: 750px;
+    background-image: url(../images/img-header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner_title h1{
+    font-size: 70px;
+    margin-top: 10px;
+    text-shadow: 5px 5px 5px #270000;
+    letter-spacing: 2px;
+}
+.banner_title h1 a:hover{
+    font-size: 90px;
+    transition: 1s;
+    
+}
+h1 a{
+    text-decoration: none;
+    color: #000000;
+    font-family:'Petemoss';
+    
+}
+h1 a:hover{
+    text-decoration: none;
+    color: rgb(63, 0, 0);
+    transition:1s;
+}
+
+.geral{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width:70%;
+}
+#about{
+    font-family: 'Philosopher';
+    border-bottom: 2px solid #FFF;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-bottom:5px;
+}
+.img_and_about_text{
+    display: flex;
+    flex-direction: row;
+    margin-top:10px;
+    
+}
+.img_about img{
+    width:300px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 60px; 
+} 
+#disco{
+    font-family: 'Philosopher';
+    border-bottom: 2px solid #FFF;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-bottom:5px;
+}
+.albums{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:10px;   
+}
+.cover{
+    display: flex;
+    flex-direction: column;
+}
+.cover_img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.cover_img img:hover{
+    width: 250px;
+    height: 250px;
+    box-shadow: 10px 5px 70px #8a0a0a;
+    transition: 1s;
+}
+.cover strong{
+    display: flex;
+    justify-content:center;
+    margin-bottom:10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom:20px;
+}
+@media (max-width:1160px){
+    .cover_img img{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width:910px){
+    .cover strong{
+        font-size:10px;
+    }
+}
+@media (max-width:850px){
+    .cover_img img{
+        width:100px;
+        height:100px;
+    }
+}
+@media (max-width:790px){
+    .img_and_about_text{
+        flex-direction:column;
+    }
+    .img_about img{
+        width: 100%;
+        margin: 0px;
+    }
+    #about,
+    #disco{
+        font-size:15px;
+        margin:0;
+    }
+    .about_text{
+        font-size:13px;
+        margin:0px;
+    }
+}
+
+
+
